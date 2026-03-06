@@ -1,0 +1,82 @@
+/* ==UserStyle==
+@name           ChatGPT 2012 Mode
+@namespace      lag.chatgpt.2012mode
+@version        1.1.0
+@description    Makes ChatGPT look like a simple 2012 style website with gradients and square corners
+@author         Lag
+@match          https://chatgpt.com/*
+@match          https://chat.openai.com/*
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("chatgpt.com"), domain("chat.openai.com") {
+
+/* === CHATGPT 2012 MODE === */
+
+/* square corners everywhere */
+* {
+  border-radius: 2px !important;
+}
+
+/* remove modern blur + glass */
+div {
+  backdrop-filter: none !important;
+}
+
+/* page background */
+body {
+  background: linear-gradient(#f6f6f6, #e5e5e5) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* sidebar */
+nav {
+  background: linear-gradient(#ffffff, #dddddd) !important;
+  border-right: 1px solid #bfbfbf !important;
+}
+
+/* chat messages */
+article, .message, [data-message-author-role] {
+  background: linear-gradient(#ffffff, #f2f2f2) !important;
+  border: 1px solid #cfcfcf !important;
+  margin: 6px 0 !important;
+  padding: 10px !important;
+}
+
+/* user messages slightly blue like old forums */
+[data-message-author-role="user"] {
+  background: linear-gradient(#e8f1ff, #d7e7ff) !important;
+  border: 1px solid #a9c6ff !important;
+}
+
+/* assistant messages grey */
+[data-message-author-role="assistant"] {
+  background: linear-gradient(#ffffff, #efefef) !important;
+}
+
+/* input box */
+textarea {
+  border: 1px solid #a8a8a8 !important;
+  background: linear-gradient(#ffffff, #f0f0f0) !important;
+  padding: 6px !important;
+}
+
+/* buttons */
+button {
+  background: linear-gradient(#ffffff, #dcdcdc) !important;
+  border: 1px solid #9c9c9c !important;
+  box-shadow: inset 0 1px 0 #ffffff !important;
+  padding: 4px 10px !important;
+}
+
+/* button hover like old web */
+button:hover {
+  background: linear-gradient(#ffffff, #cfcfcf) !important;
+}
+
+/* remove extreme spacing modern ui likes */
+main {
+  max-width: 900px !important;
+}
+
+}
