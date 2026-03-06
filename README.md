@@ -1,5 +1,7 @@
 # ChatGPT 2012 Mode
 
+[Click here to Install The Style](https://robloxguest12.github.io/chatgpt-2012-mode/chatgpt-2012-mode.user.css) or [Here](https://userstyles.world/style/26931/chatgpt-2012-mode) to get it on userstyles.world
+
 Make ChatGPT look like a **simple early‑2010s website** instead of the
 modern rounded UI.
 
